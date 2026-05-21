@@ -9,3 +9,6 @@ d=client["ai_app"]
 users=db["users"]
 docs=db["documents"]
 
+if "user" not in st.session.state:
+    st.session_state.user = ""
+    
