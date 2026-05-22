@@ -1,5 +1,5 @@
 streamlit
 pymongo
 bcrypt
-pdfplumber
 requests
+pdfplumber
