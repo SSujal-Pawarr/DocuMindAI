@@ -15,3 +15,5 @@ if "history" not in st.session.state:
     st.session_state.history = []
 
 st.set_page_config(page_title="DocuMind App")
+
+
