@@ -20,3 +20,5 @@ st.set_page_config(page_title="DocuMind App")
 def hash_password(pw):
     return bcrypt.hashpw(pw.encode(), bcrypt.gensalt())
 
+def check_password(pw, hashed):
+    return bcrypt.checkpw(pw.encode(), hashed)
