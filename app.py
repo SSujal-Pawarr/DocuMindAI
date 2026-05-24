@@ -11,6 +11,7 @@ docs=db["documents"]
 
 if "user" not in st.session.state:
     st.session_state.user = ""
+    
 if "history" not in st.session.state:
     st.session_state.history = []
 
