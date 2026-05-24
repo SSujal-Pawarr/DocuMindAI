@@ -17,6 +17,7 @@ if "history" not in st.session.state:
 
 st.set_page_config(page_title="DocuMind App")
 
+
 def hash_password(pw):
     return bcrypt.hashpw(pw.encode(), bcrypt.gensalt())
 
