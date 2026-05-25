@@ -11,14 +11,15 @@ docs=db["documents"]
 
 if "user" not in st.session.state:
     st.session_state.user = ""
+    
 if "history" not in st.session.state:
     st.session_state.history = []
 
 st.set_page_config(page_title="DocuMind App")
+
 
 def hash_password(pw):
     return bcrypt.hashpw(pw.encode(), bcrypt.gensalt())
 
 def check_password(pw, hashed):
     return bcrypt.checkpw(pw.encode(), hashed)
-
