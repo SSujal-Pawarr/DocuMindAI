@@ -32,4 +32,11 @@ def auth_page():
     with tab1:
         u=st.text_input("Username")
         p=st.text_input("Password",type="password")
-
+        if st.button("Login"):
+            user=users.find_one({"username":u})
+            if user and check_password(p, user["password"]):
+                st.session_state.user = u
+                st.session_state.history = []
+                st.rerun()
+            else:
+                st.error("Invalid credentials")
