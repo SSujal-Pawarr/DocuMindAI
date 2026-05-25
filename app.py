@@ -23,3 +23,13 @@ def hash_password(pw):
 
 def check_password(pw, hashed):
     return bcrypt.checkpw(pw.encode(), hashed)
+
+
+def auth_page():
+    st.title("DocuMind AI")
+    tab1,tab2 = st.tabs(["Login","Register"])
+
+    with tab1:
+        u=st.text_input("Username")
+        p=st.text_input("Password",type="password")
+
