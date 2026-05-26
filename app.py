@@ -49,3 +49,4 @@ def auth_page():
                st.error("Username already exists")
             else:
                 users.insert_one({"username": ru, "password": hash_password(rp)})    
+                st.success("Registered")
