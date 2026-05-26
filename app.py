@@ -47,4 +47,5 @@ def auth_page():
         if st.button("Register"):
             if users.find_one({"username": ru}):
                st.error("Username already exists")
-                
+            else:
+                users.insert_one({"username": ru, "password": hash_password(rp)})    
