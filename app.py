@@ -41,4 +41,7 @@ def auth_page():
             else:
                 st.error("Invalid credentials")
 
-    
+    with tab2:
+        ru=st.text_input("New Username")
+        rp=st.text_input("New Password",type="password")
+       
