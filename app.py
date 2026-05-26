@@ -44,4 +44,7 @@ def auth_page():
     with tab2:
         ru=st.text_input("New Username")
         rp=st.text_input("New Password",type="password")
-       
+        if st.button("Register"):
+            if users.find_one({"username": ru}):
+               st.error("Username already exists")
+                
