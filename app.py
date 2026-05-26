@@ -40,3 +40,5 @@ def auth_page():
                 st.rerun()
             else:
                 st.error("Invalid credentials")
+
+    
