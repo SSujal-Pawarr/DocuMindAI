@@ -57,4 +57,7 @@ def chat_page():
 
     col1,col2 = st.columns([3,1])
     col1.write(f"User: {st.session_state.user}")
-    
+    if col2.button("Logout"):
+        st.session_state.user = ""
+        st.session_state.history = []
+        st.rerun()
