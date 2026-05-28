@@ -51,3 +51,6 @@ def auth_page():
                 users.insert_one({"username": ru, "password": hash_password(rp)})    
                 st.success("Registered")
 
+def chat_page():
+    st.title("DocuMind AI")
+  
