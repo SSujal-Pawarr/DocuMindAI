@@ -53,4 +53,8 @@ def auth_page():
 
 def chat_page():
     st.title("DocuMind AI")
-  
+    
+
+    col1,col2 = st.columns([3,1])
+    col1.write(f"User: {st.session_state.user}")
+    
