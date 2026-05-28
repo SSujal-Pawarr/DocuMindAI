@@ -61,3 +61,5 @@ def chat_page():
         st.session_state.user = ""
         st.session_state.history = []
         st.rerun()
+
+    file = st.file_uploader("Upload PDF", type="pdf")
