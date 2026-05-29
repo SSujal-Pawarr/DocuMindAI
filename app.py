@@ -63,3 +63,7 @@ def chat_page():
         st.rerun()
 
     file = st.file_uploader("Upload PDF", type="pdf")
+    if file:
+        text = ""
+        with pdfplumber.open(file) as pdf:
+            
