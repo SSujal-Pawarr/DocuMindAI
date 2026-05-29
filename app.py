@@ -68,3 +68,5 @@ def chat_page():
         with pdfplumber.open(file) as pdf:
                for page in pdf.pages:
                     text += page.extract_text() or ""    
+        docs.insert_one({"user": st.session_state.user, "content": text})
+        st.success("Pdf Processed")
