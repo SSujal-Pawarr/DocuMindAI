@@ -70,3 +70,4 @@ def chat_page():
                     text += page.extract_text() or ""    
         docs.insert_one({"user": st.session_state.user, "content": text})
         st.success("Pdf Processed")
+        
