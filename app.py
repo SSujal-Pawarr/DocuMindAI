@@ -75,3 +75,7 @@ def chat_page():
     for msg in st.session_state.history:
         with st.chat_message(msg["role"]):  
             st.markdown(msg["content"])    
+    
+    q=st.chat_input("Ask something about your document...")
+
+    
