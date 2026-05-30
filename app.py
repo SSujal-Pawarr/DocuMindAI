@@ -82,3 +82,6 @@ def chat_page():
         st.session_state.history.append({"role": "user", "content": q})
 
         doc=docs.find_one({"user": st.session_state.user})
+
+        if not doc:
+            ans="Please upload a document first."
