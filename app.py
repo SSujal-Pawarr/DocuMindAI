@@ -78,4 +78,7 @@ def chat_page():
     
     q=st.chat_input("Ask something about your document...")
 
-    
+    if q:
+        st.session_state.history.append({"role": "user", "content": q})
+
+        
