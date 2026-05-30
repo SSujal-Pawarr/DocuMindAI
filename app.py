@@ -85,3 +85,4 @@ def chat_page():
 
         if not doc:
             ans="Please upload a document first."
+            
