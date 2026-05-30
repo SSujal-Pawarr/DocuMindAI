@@ -81,4 +81,4 @@ def chat_page():
     if q:
         st.session_state.history.append({"role": "user", "content": q})
 
-        
+        doc=docs.find_one({"user": st.session_state.user})
