@@ -85,4 +85,6 @@ def chat_page():
 
         if not doc:
             ans="Please upload a document first."
+        else:
+            content=doc["content"][:3000]  # Limit content for API
             
