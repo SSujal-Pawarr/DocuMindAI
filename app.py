@@ -89,10 +89,11 @@ def chat_page():
             content=doc["content"][:3000]  # Limit content for API
             res=requests.post(
                 "http://api.groq.com/openai/v1/chat/completions",
+                
                 headers={
                     "Authorization": "Bearer ..."
                 },
-                
+
                 json={
                     "model": "llama-3.1-8b-instant",
                     "messages": [
