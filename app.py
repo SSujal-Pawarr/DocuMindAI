@@ -92,6 +92,7 @@ def chat_page():
                 headers={
                     "Authorization": "Bearer ..."
                 },
+                
                 json={
                     "model": "llama-3.1-8b-instant",
                     "messages": [
