@@ -92,4 +92,9 @@ def chat_page():
                 headers={
                     "Authorization": "Bearer ..."
                 },
-                json={"question": q, "content": content})
+                json={
+                    "model": "llama-3.1-8b-instant",
+                    "messages": [
+                        {"role": "user", "content": f"Question: {q}\nContext: {content}"}
+                    ]
+                })
