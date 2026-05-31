@@ -95,6 +95,7 @@ def chat_page():
                 json={
                     "model": "llama-3.1-8b-instant",
                     "messages": [
-                        {"role": "user", "content": f"Question: {q}\nContext: {content}"}
+                        {"role": "system", "content": "Answer based on context."},
+                        {"role": "user", "content":content+ "\nQuestion: " + q}
                     ]
                 })
