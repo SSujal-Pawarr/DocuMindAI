@@ -87,4 +87,9 @@ def chat_page():
             ans="Please upload a document first."
         else:
             content=doc["content"][:3000]  # Limit content for API
-            
+            res=requests.post(
+                "http://api.groq.com/openai/v1/chat/completions",
+                headers={
+                    "Authorization": "Bearer ..."
+                },
+                json={"question": q, "content": content})
