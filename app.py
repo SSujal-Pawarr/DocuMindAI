@@ -107,4 +107,5 @@ def chat_page():
             except:
                 ans=res.text
             
-        
+        st.session_state.history.append({"role": "assistant", "content": ans})
+        st.rerun()
