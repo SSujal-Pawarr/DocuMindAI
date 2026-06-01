@@ -100,4 +100,9 @@ def chat_page():
                         {"role": "system", "content": "Answer based on context."},
                         {"role": "user", "content":content+ "\nQuestion: " + q}
                     ]
-                })
+                }
+            )
+            try:
+                ans=res.json()["choices"][0]["message"]["content"]
+            except:
+                ans=res.text
