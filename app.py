@@ -109,3 +109,4 @@ def chat_page():
             
         st.session_state.history.append({"role": "assistant", "content": ans})
         st.rerun()
+
