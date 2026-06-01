@@ -106,3 +106,5 @@ def chat_page():
                 ans=res.json()["choices"][0]["message"]["content"]
             except:
                 ans=res.text
+            
+        
