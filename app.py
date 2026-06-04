@@ -62,6 +62,7 @@ def auth_page():
                 })
                 st.success("Registered Successfully")
 
+
 # ---------------- Chat Page ----------------
 def chat_page():
     st.title("DocuMind AI")
