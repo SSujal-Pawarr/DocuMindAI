@@ -4,6 +4,7 @@ import bcrypt
 import pdfplumber
 import requests
 
+
 # ---------------- MongoDB ----------------
 client = MongoClient("mongodb://localhost:27017/")
 db = client["ai_app"]
