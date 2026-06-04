@@ -12,6 +12,7 @@ db = client["ai_app"]
 users = db["users"]
 docs = db["documents"]
 
+
 # ---------------- Streamlit Config ----------------
 st.set_page_config(page_title="DocuMind App")
 
