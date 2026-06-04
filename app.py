@@ -110,6 +110,7 @@ def chat_page():
         st.session_state.history.append({"role": "assistant", "content": ans})
         st.rerun()
 
+
 if st.session_state.user:
     chat_page()
 else:
